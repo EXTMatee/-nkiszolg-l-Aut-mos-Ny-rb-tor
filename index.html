@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Önkiszolgáló Autómosó Nyírbátor - A legkorszerűbb technológiával felszerelt önkiszolgáló autómosó. Mindig nyitva! Derzsi út 57.">
+    <title>Önkiszolgáló Autómosó Nyírbátor | Modern önkiszolgáló autómosó</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Egyedi kurzor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigáció -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo">
+                <img src="logo.png" alt="Önkiszolgáló Autómosó Nyírbátor logó" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-fallback">
+                    <span class="logo-icon">🚗</span>
+                    <span class="logo-text">Autómosó<span>Nyírbátor</span></span>
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#rolunk" class="nav-link">Rólunk</a>
+                <a href="#szolgaltatasok" class="nav-link">Szolgáltatások</a>
+                <a href="#elonyok" class="nav-link">Előnyök</a>
+                <a href="#helyszin" class="nav-link">Helyszín</a>
+                <a href="#kapcsolat" class="nav-link cta-nav">Irány a mosó!</a>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero szekció -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="wallpaper.png" alt="Autómosó háttér" class="wallpaper" onerror="this.style.display='none'">
+            <div class="hero-overlay"></div>
+            <div class="bubbles">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge"> Legkorszerűbb technológia</div>
+            <h1 class="hero-title">
+                Önkiszolgáló<br>
+                <span class="gradient-text">Autómosó</span><br>
+                Nyírbátor
+            </h1>
+            <p class="hero-subtitle">A legmodernebb felszereltségű önkiszolgáló autómosó a városban. Tiszta autó, gyorsan, kényelmesen – bármikor!</p>
+            <div class="hero-cta">
+                <a href="#helyszin" class="btn btn-primary">
+                    <span>Megnézem a helyszínt</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#szolgaltatasok" class="btn btn-secondary">Szolgáltatások</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">4</span>
+                    <span class="stat-label">Mosóállás</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">24/7</span>
+                    <span class="stat-label">Mindig nyitva</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">💯</span>
+                    <span class="stat-label">Modern technológia</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Görgess lejjebb</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Rólunk -->
+    <section class="section about" id="rolunk">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Rólunk</span>
+                <h2 class="section-title">Tiszta autó, modern élmény</h2>
+                <p class="section-desc">Nyírbátor legkorszerűbb önkiszolgáló autómosója várja a sofőröket a Derzsi út 57. szám alatt.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <div class="about-icon">🚿</div>
+                    <h3>Önkiszolgáló rendszer</h3>
+                    <p>Te irányítasz mindent. Válaszd ki a programot, és mosd le az autódat a saját tempódban, a legjobb minőségű gépekkel.</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-icon">⚡</div>
+                    <h3>Legújabb technológia</h3>
+                    <p>A legkorszerűbb magasnyomású rendszerekkel és minőségi tisztítószerekkel dolgozunk, hogy az eredmény mindig tökéletes legyen.</p>
+                </div>
+                <div class="about-card glass">
+                    <div class="about-icon">🌙</div>
+                    <h3>Mindig nyitva</h3>
+                    <p>Nincs záróra! Éjjel-nappal, hétvégén és ünnepnapokon is elérhető vagyunk. Mosd le az autódat, amikor neked kényelmes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Szolgáltatások -->
+    <section class="section services" id="szolgaltatasok">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Szolgáltatások</span>
+                <h2 class="section-title">Minden, amire szükséged van</h2>
+                <p class="section-desc">4 modern mosóállás, prémium programok és kényelmi szolgáltatások egy helyen.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-icon">💧</div>
+                    <h3>Magasnyomású mosás</h3>
+                    <p>Erős, hatékony tisztítás a legmakacsabb szennyeződések ellen is. Professzionális nyomás a tökéletes eredményért.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <div class="service-icon">🫧</div>
+                    <h3>Aktív hab program</h3>
+                    <p>Bőséges, tartós hab, amely áztatja és oldja a szennyeződéseket, miközben kíméli a fényezést.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-icon">✨</div>
+                    <h3>Viasz & fényezés</h3>
+                    <p>Védd és ragyogtasd fel az autód felületét. Hosszantartó védelem és tükörfényes végeredmény.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <div class="service-icon">🌪️</div>
+                    <h3>Porszívó állások</h3>
+                    <p>Tisztítsd ki a belsőteret is! Erős porszívók a szőnyegekhez, ülésekhez és a legapróbb sarkokhoz.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">05</div>
+                    <div class="service-icon">🏠</div>
+                    <h3>Zárt & nyitott állások</h3>
+                    <p>Választhatsz zárt állást is – védve a széltől és az időjárástól, kényelmes mosás bármilyen körülmények között.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">06</div>
+                    <div class="service-icon">💳</div>
+                    <h3>Kényelmes fizetés</h3>
+                    <p>Egyszerű és gyors fizetési lehetőségek. Nincs sorban állás, csak tiszta autó és elégedett sofőr.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Előnyök -->
+    <section class="section advantages" id="elonyok">
+        <div class="container">
+            <div class="advantages-wrapper">
+                <div class="advantages-content">
+                    <span class="section-tag">Miért minket válassz?</span>
+                    <h2 class="section-title">A különbség érezhető</h2>
+                    <ul class="advantages-list">
+                        <li>
+                            <div class="check">✓</div>
+                            <div>
+                                <strong>Legkorszerűbb technológia</strong>
+                                <p>Modern gépek, hatékony tisztítószerek, kiváló eredmény.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="check">✓</div>
+                            <div>
+                                <strong>Mindig nyitva – 0-24</strong>
+                                <p>Nincs többé „zárva” tábla. Gyere, amikor neked jó.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="check">✓</div>
+                            <div>
+                                <strong>4 állásos kapacitás</strong>
+                                <p>Gyors kiszolgálás, kevesebb várakozás még csúcsidőben is.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="check">✓</div>
+                            <div>
+                                <strong>Tiszta, rendes környezet</strong>
+                                <p>Rendszeresen karbantartott terület, kellemes mosási élmény.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="check">✓</div>
+                            <div>
+                                <strong>Nyírbátor szívében</strong>
+                                <p>Könnyen megközelíthető helyen, a Derzsi út 57. alatt.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="advantages-visual">
+                    <div class="visual-card glass">
+                        <div class="visual-badge">MINDIG NYITVA</div>
+                        <div class="clock">
+                            <span class="time">24</span>
+                            <span class="unit">óra</span>
+                        </div>
+                        <p>Éjjel-nappal a szolgálatodban</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Helyszín -->
+    <section class="section location" id="helyszin">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Helyszín</span>
+                <h2 class="section-title">Gyere el hozzánk!</h2>
+                <p class="section-desc">Könnyen megtalálsz minket Nyírbátorban.</p>
+            </div>
+            <div class="location-grid">
+                <div class="location-info glass">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Cím</h4>
+                            <p>Derzsi út 57.<br>4300 Nyírbátor, Hungary</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h4>Nyitvatartás</h4>
+                            <p class="open-badge">Mindig nyitva</p>
+                            <p>0–24 óráig minden nap</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">💰</div>
+                        <div>
+                            <h4>Árkategória</h4>
+                            <p>Kedvező, önkiszolgáló árak</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Derzsi+út+57,+Nyírbátor" target="_blank" rel="noopener" class="btn btn-primary map-btn">
+                        Útvonalterv a Google Maps-en
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    </a>
+                </div>
+                <div class="map-container glass">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Derzsi%20%C3%BAt%2057,%20Ny%C3%ADrb%C3%A1tor&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Önkiszolgáló Autómosó Nyírbátor térkép">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Kapcsolat -->
+    <section class="section cta-section" id="kapcsolat">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Kész az autód a ragyogásra?</h2>
+                    <p>Ne várj tovább! Gyere el a Derzsi út 57-re, és tapasztald meg a különbséget. Modern technológia, mindig nyitva, tiszta eredmény.</p>
+                    <div class="cta-buttons">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Derzsi+út+57,+Nyírbátor" target="_blank" class="btn btn-primary btn-lg">
+                            Irány a mosó!
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="btn btn-outline btn-lg">
+                            Facebook oldal
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-decoration">
+                    <div class="deco-circle"></div>
+                    <div class="deco-circle"></div>
+                    <div class="deco-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-fallback">
+                            <span class="logo-icon">🚗</span>
+                            <span class="logo-text">Autómosó<span>Nyírbátor</span></span>
+                        </div>
+                    </div>
+                    <p>A legkorszerűbb technológiával felszerelt önkiszolgáló autómosó Nyírbátorban.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Gyors linkek</h4>
+                    <a href="#rolunk">Rólunk</a>
+                    <a href="#szolgaltatasok">Szolgáltatások</a>
+                    <a href="#elonyok">Előnyök</a>
+                    <a href="#helyszin">Helyszín</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Elérhetőség</h4>
+                    <p>📍 Derzsi út 57., Nyírbátor</p>
+                    <p>🕐 Mindig nyitva (0–24)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Önkiszolgáló Autómosó Nyírbátor. Minden jog fenntartva.</p>
+                <p class="made">Készült szeretettel a tiszta autókért 💙</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
