@@ -8,15 +8,15 @@
 :root {
     --bg-dark: #0a1628;
     --bg-card: rgba(15, 35, 65, 0.6);
-    --primary: #00d4ff;
-    --primary-dark: #0099cc;
-    --secondary: #7b61ff;
-    --accent: #00ffa3;
-    --text: #e8f4ff;
-    --text-muted: #8ba3c7;
+    --primary: #5ce1ff;
+    --primary-dark: #00b8e6;
+    --secondary: #a78bfa;
+    --accent: #4dffc3;
+    --text: #f0f7ff;
+    --text-muted: #a8c0e0;
     --glass: rgba(255, 255, 255, 0.06);
     --glass-border: rgba(255, 255, 255, 0.12);
-    --gradient: linear-gradient(135deg, #00d4ff 0%, #7b61ff 50%, #00ffa3 100%);
+    --gradient: linear-gradient(135deg, #7af0ff 0%, #c4b5fd 45%, #6effc5 100%);
     --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
     --radius: 20px;
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -88,10 +88,11 @@ h1, h2, h3, h4 {
 }
 
 .gradient-text {
-    background: var(--gradient);
+    background: linear-gradient(135deg, #a5f3ff 0%, #e0d4ff 40%, #9affd9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 0 12px rgba(165, 243, 255, 0.35));
 }
 
 /* ===== LAYOUT ===== */
@@ -254,13 +255,14 @@ h1, h2, h3, h4 {
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.1;
+    color: #f0f7ff;
 }
 
 .logo-text span {
     display: block;
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--primary);
+    color: #7af0ff;
     letter-spacing: 1px;
 }
 
